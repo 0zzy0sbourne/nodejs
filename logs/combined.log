@@ -1,2 +1,8 @@
 {"label":"icecream-store","level":"info","message":"GET /menu 200 309 - 3.789 ms\n","timestamp":"2023-06-09T19:31:23.514Z"}
 {"label":"icecream-store","level":"info","message":"GET /menu 200 309 - 1.875 ms\n","timestamp":"2023-06-09T19:31:31.908Z"}
+{"label":"icecream-store","level":"info","message":"GET /menu/1 200 75 - 1.493 ms\n","timestamp":"2023-06-09T19:46:45.890Z"}
+{"label":"icecream-store","level":"info","message":"GET /menu/0 200 69 - 0.496 ms\n","timestamp":"2023-06-09T19:47:05.435Z"}
+{"label":"icecream-store","level":"info","message":"GET /menu/5 404 1221 - 2.123 ms\n","timestamp":"2023-06-09T19:47:14.140Z"}
+{"label":"icecream-store","level":"info","message":"GET /menu/4 200 67 - 0.572 ms\n","timestamp":"2023-06-09T19:47:19.304Z"}
+{"label":"icecream-store","level":"info","message":"POST /menu 200 22 - 0.648 ms\n","timestamp":"2023-06-09T19:47:29.223Z"}
+{"label":"icecream-store","level":"info","message":"GET /menu/5 200 75 - 0.550 ms\n","timestamp":"2023-06-09T19:47:36.654Z"}
