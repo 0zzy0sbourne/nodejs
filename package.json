@@ -2,10 +2,11 @@
   "name": "nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "src/server.js",
   "type": "module",
   "scripts": {
-    "dev": "node server.js"
+    "dev": "node src/server.js", 
+    "start:dev": "nodemon"
   },
   "author": "",
   "license": "ISC",
