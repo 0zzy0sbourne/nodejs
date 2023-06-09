@@ -3,10 +3,11 @@ import routes from "./routes/index.js";
 import morgan from "morgan";
 import logger from "./lib/logger.js";
 import errorHandler from "./lib/error_handler.js";
+import config from "../config/development.json" assert { type: "json" };
 
 const app = express();
 const hostname = "127.0.0.1"; 
-const port = 3000; 
+const port = config.port; 
 const httpReqLogFormat = 
     ':method :url :status :res[content-length] - :response-time ms';
 const httpReqLogger = morgan(httpReqLogFormat, {stream: logger.stream}); 
@@ -18,7 +19,9 @@ const httpReqLogger = morgan(httpReqLogFormat, {stream: logger.stream});
 app.use(express.json()); 
 app.use(httpReqLogger);
 app.use(errorHandler);
-
+app.use((req, res, next) => {
+    res.status(404).json({ message: "Path not found!"})
+})
 
 // ROUTES
 app.use("/", routes); 
